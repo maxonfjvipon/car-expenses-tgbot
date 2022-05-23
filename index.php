@@ -235,7 +235,7 @@ if ($state == null) {
                                 $send_data = sendDataWithText("Прекрасно! Какой пробег сейчас у авто?");
                                 $fuel_up_id = $state['value'];
                                 query($connection, "update fuelups set quantity = $quantity where id = $fuel_up_id");
-                                newCommand($connection, $commands['fuel_up'], 2, $fuel_up_id);
+                                newCommand($connection, $commands['fuel_up'], 3, $fuel_up_id);
                             }
                         }
                         break;
